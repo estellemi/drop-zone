@@ -3,18 +3,12 @@
 html,
 body,
 div,
-span,
 h1,
 h2,
 h3,
 h4,
-h5,
-h6,
 p,
-a,
-img,
-ul,
-li {
+{
     margin: 0;
     padding: 0;
     border: 0;
@@ -26,10 +20,6 @@ li {
     vertical-align: baseline;
 }
 
-:focus {
-    outline: 0;
-}
-
 html {
     height: 100%;
 }
@@ -39,11 +29,6 @@ body {
     line-height: 40px;
     color: black;
     height: 100%;
-}
-
-ol,
-ul {
-    list-style: none;
 }
 
 /* === GENERAL LAYOUT === */
