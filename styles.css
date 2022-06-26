@@ -1,0 +1,254 @@
+/* === RESET RELOADED by meyerweb.com === */
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+:focus {
+    outline: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 40px;
+    color: black;
+    height: 100%;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+/* === GENERAL LAYOUT === */
+
+h1 {
+
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Rozha One';
+    font-size: 24px;
+    margin: auto;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+h3 {
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 18px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/landing.jpg');
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 31px;
+
+}
+
+main {
+    margin: 0 31px;
+    height: 72%;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* ===  HEADER === */
+
+.logo-container {
+    width: 151px;
+    height: 94px;
+}
+
+.logo-container__row {
+    width: 100%;
+    display: flex;
+
+}
+
+.logo-box {
+    background-color: black;
+    height: 43px;
+    padding: 0 14px;
+}
+
+.logo-container__row:nth-of-type(2n) {
+    margin-top: 11px;
+    flex-direction: row-reverse;
+}
+
+.logo {
+    font-family: 'Rozha One';
+    font-size: 36px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+/* === COUNTDOWN === */
+
+.countdown-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countdown-container__row {
+    display: flex;
+    margin-bottom: 18px;
+    justify-content: space-around;
+}
+
+.countdown-container__row:nth-last-of-type(1) {
+    margin-bottom: 0;
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 13px;
+}
+
+.countdown-item:nth-of-type(1) {
+    margin-left: 0;
+}
+
+.countdown-item__row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.time-box {
+    background-color: black;
+    height: 39.5px;
+    width: 31.38px;
+    text-align: center;
+    margin-bottom: 7px;
+    display: flex;
+}
+
+.time-box:nth-of-type(2n) {
+    margin-left: 7px;
+}
+
+
+@media(min-width: 769px) {
+
+    /* === GENERAL LAYOUT === */
+
+    h1,
+    h2 {
+        font-size: 48px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    main {
+        height: 80%;
+        display: flex;
+        justify-content: end;
+    }
+
+    .container {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    /* === COUNTDOWN === */
+
+    .countdown-container {
+        margin: auto 0;
+    }
+
+    .countdown-container__row {
+        margin-bottom: 36px;
+    }
+
+    .countdown-item {
+        margin-left: 24px;
+    }
+
+    .countdown-item:nth-of-type(1) {
+        margin-left: 0;
+    }
+
+    .time-box {
+        height: 73px;
+        width: 58px;
+        margin-bottom: 12px;
+    }
+
+    .time-box:nth-of-type(2n) {
+        margin-left: 12px;
+    }
+
+}
+
+@media(min-width: 1024px) {
+
+    .container {
+        width: 66%;
+    }
+}
